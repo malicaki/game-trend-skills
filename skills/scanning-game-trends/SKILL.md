@@ -13,7 +13,7 @@ Produce a dated, sourced insight report on the current mobile game market. Focus
 
 1. **Anchor the date.** Write today's date. The scan window is the last complete month plus the current month to date. Everything older is background and gets labeled with its date.
 2. **Load context.** Read `game-trend-profile.md` and the latest `reports/*-insight-report.md`. Note the earlier report's watchlist, because you must answer each item.
-3. **Search in parallel.** Run one batch per lane. Use `sources.md` for where to look, and put the month and year in every query.
+3. **Search in parallel.** Run one batch per lane. Use `using-game-trend-skills/sources.md` for where to look, and put the month and year in every query.
 
    | Lane | Must answer |
    |---|---|

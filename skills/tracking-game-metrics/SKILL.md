@@ -20,7 +20,7 @@ Turn a game's numbers into **one decision** and **the 1–3 actions** that most 
    - Small cohorts make retention noisy. Report the cohort size, and if it is in the low hundreds or smaller, say the read is **directional only**.
    - Don't mix organic, paid and publisher-test cohorts.
    - Don't compare builds across a major change. Treat them as separate cohorts.
-3. **Build a live threshold table** for this genre, platform, geo and month. Find current prototype KPI targets and eCPM ranges (see `sources.md`), and cite each one. Note when the cohort's geo is known to retain or monetize below the global average. Never reuse thresholds from memory or from an old log without re-checking their date.
+3. **Build a live threshold table** for this genre, platform, geo and month. Find current prototype KPI targets and eCPM ranges (see `using-game-trend-skills/sources.md`), and cite each one. Note when the cohort's geo is known to retain or monetize below the global average. Never reuse thresholds from memory or from an old log without re-checking their date.
 4. **Diagnose in funnel order:** marketability → retention → engagement → monetization. The **first** weak stage is the problem. Fixing a later stage first is wasted effort.
 
    | Symptom | Likely cause | First things to try |
