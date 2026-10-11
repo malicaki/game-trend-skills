@@ -96,6 +96,13 @@ for (const rel of manifestPaths) {
     fail(`${rel}: invalid JSON (${e.message})`);
   }
 }
+// .agents marketplace must point at the public git repo
+const agentsMkt = JSON.parse(readFileSync(join(root, '.agents/plugins/marketplace.json'), 'utf8'));
+const agentsUrl = agentsMkt.plugins?.[0]?.source?.url;
+if (agentsUrl !== 'https://github.com/malicaki/game-trend-skills.git') {
+  fail(`.agents/plugins/marketplace.json: plugin source url is '${agentsUrl}', expected 'https://github.com/malicaki/game-trend-skills.git'`);
+}
+
 const uniqueVersions = new Set(versions.values());
 if (uniqueVersions.size > 1) {
   fail(`version mismatch across manifests: ${[...versions.entries()].map(([k, v]) => `${k}=${v}`).join(', ')}`);

@@ -8,7 +8,8 @@
       "name": "game-trend-skills",
       "source": {
         "source": "url",
-        "url": "./"
+        "url": "https://github.com/malicaki/game-trend-skills.git",
+        "ref": "master"
       },
       "policy": {
         "installation": "AVAILABLE",

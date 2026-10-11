@@ -49,12 +49,24 @@ Register the marketplace and install the plugin:
 /plugin install game-trend-skills@game-trend-skills
 ```
 
-### Codex CLI
+### Codex (CLI, IDE, and the ChatGPT desktop app)
 
 ```bash
 codex plugin marketplace add malicaki/game-trend-skills
 codex plugin add game-trend-skills@game-trend-skills
 ```
+
+In the ChatGPT desktop app (Codex, or ChatGPT with Work on): after adding the marketplace, restart the app, open Plugins, pick the **Game Trend Skills** source and click **+** on Game Trend Skills. Start a new chat.
+
+### ChatGPT (web Skills upload)
+
+For eligible ChatGPT Business, Enterprise, Healthcare and Edu workspaces (subject to workspace settings):
+
+1. Download the per-skill zips from the [latest GitHub Release](https://github.com/malicaki/game-trend-skills/releases/latest).
+2. In ChatGPT: sidebar Plugins → Plugin Directory → **Skills** tab → **Create** → "Upload from your computer".
+3. Upload `using-game-trend-skills.zip` first, then the other skills you want.
+
+Uploads are scanned by ChatGPT and may show as "Needs Review". Each zip is self-contained — shared references (`sources.md`, `metrics-glossary.md`, `scoring-rubric.md`) are copied into the skills that cite them. To rebuild the zips locally: `node scripts/package-chatgpt.mjs`.
 
 ### Cursor
 
