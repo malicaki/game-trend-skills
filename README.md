@@ -125,6 +125,13 @@ npx skills add malicaki/game-trend-skills
 
 Copy `skills/*` into `~/.agents/skills/`, `~/.claude/skills/`, or a project-level `.devin/skills/` directory — whichever your agent reads. Or just copy `AGENTS.md` into your project; it routes to the skills on its own.
 
+## What the plugin runs, sends and stores
+
+- Instructions only: Markdown skills. No hooks, no MCP servers, no bundled executables, nothing runs on install.
+- The skills ask your agent to use its own web search/fetch tools to read public market sources (charts, reports, store pages, platform docs). No data is sent to any service operated by this project.
+- The agent writes plain Markdown files into your current project (`reports/`, `briefs/`, `metrics/`, `game-trend-profile.md`). Nothing is stored elsewhere.
+- `scripts/` holds maintainer tools (`validate.mjs`, `package-chatgpt.mjs`) that run only when you run them yourself.
+
 ## Credits / inspiration
 
 - [obra/superpowers](https://github.com/obra/superpowers) — multi-harness plugin packaging and install commands
